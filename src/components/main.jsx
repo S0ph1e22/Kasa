@@ -19,11 +19,11 @@ import { StrictMode } from 'react'
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root />,
+    element: <Root />, //layout principal
     children :[
       {
-        path:"home",
-        element : <App />,
+        path:"home", //route enfant
+        element : <App />, //composant afficher quand on est sur /home
       }
     ]
   },

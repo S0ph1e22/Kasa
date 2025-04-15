@@ -1,0 +1,27 @@
+.kasa_banner{
+    position: absolute;
+    height:223px ;
+    width: 1240px;
+    top: 163px;
+   
+    img{
+        height:223px ;
+        width: 1240px;
+        border-radius: 25px;
+        }
+
+    p{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        text-align: center;
+        color: white;
+        font-size: 48px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 1));
+        font-family: "Montserrat";
+        width: 733px;
+        font-weight: 700;
+    }
+}
