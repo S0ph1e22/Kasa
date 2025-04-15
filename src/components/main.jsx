@@ -1,4 +1,5 @@
-//créer un routeur
+//initialise l'application react et crée un routeur, injecte app dans la balise
+//<div id="root"</div> de index.html
 import React from "react";
 import ReactDOM from "react-dom/client";
 import {

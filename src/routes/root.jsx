@@ -1,3 +1,5 @@
+//layout général, les enfants du routeur y sont injectés automatiquement dans l'outlet
+
 export default function Root() {
     console.log("root est appelée")
     return (
