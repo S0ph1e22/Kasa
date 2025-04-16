@@ -1,0 +1,33 @@
+#error-page{
+
+    h1{
+       
+        font-size: 288px;
+        font-family: "Montserrat";
+        font-weight: 700;
+        color: rgba(255, 96, 96, 1);
+        height: 263px;
+        margin: 0;
+    }
+
+    p{
+        color: rgba(255, 96, 96, 1);
+        font-size: 36px;
+        font-family: "Montserrat";
+        font-weight: 500;
+        height: 51px;
+        margin: 0;  
+    }
+
+    a{
+        display: flex;
+        color: black;
+        text-decoration: underline;
+        font-weight: 500;
+        font-size: 18px;
+        height: 26px;
+        align-items: center;
+        justify-content: center;
+    }
+
+}

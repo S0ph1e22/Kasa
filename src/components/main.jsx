@@ -9,10 +9,13 @@ import App from './App.jsx'
 import { StrictMode } from 'react'
 //import { createRoot } from 'react-dom/client'
 
+import ErrorPage from "./Error.jsx";
+
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />, //layout principal
+    errorElement: <ErrorPage/>, //ajout page d'erreur
     children :[
       {
         index:true, //correspond à la route /
