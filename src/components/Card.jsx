@@ -1,0 +1,21 @@
+//card des logements
+
+import React from "react";
+import "../styles/Card.scss";
+
+function Card ({logement}){
+    return (
+        <div className="logement-card">
+            <h2>{logement.title}</h2>
+            <img src={logement.cover} alt={logement.title} />
+            <p>{logement.description}</p>
+            <div className="pictures">
+                {logement.pictures.map((picture, index) => (
+                <img key={index} src={picture} alt={`Logement image ${index + 1}`} />
+                ))}
+            </div>
+        </div>
+      )
+}
+
+export default Card

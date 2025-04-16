@@ -2,8 +2,6 @@ import "../styles/Header.scss";
 import logo from "../assets/logo.png"
 
 function Header(){
-
-
     return(
         <header>
             <img src={logo} alt='logo kasa' className="kasa-logo-header"></img>
