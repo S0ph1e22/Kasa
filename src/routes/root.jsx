@@ -9,11 +9,10 @@ export default function Root() {
     console.log("root est appelée")
     return (
       <>
-       <Header />
-       <Banner />
-       <div id="detail"></div>
+       <Header /> {/*en-tête */}
+       <Banner /> {/*bannière */}
        <Outlet /> {/*app y est injecté */}
-       <Footer />
+       <Footer /> {/*pied de page */}
       </>
     );
   }

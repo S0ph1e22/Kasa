@@ -10,7 +10,6 @@ function App() {
 
   return (
     <>
-      <Banner/>
       <div className="logements-list">
         {logementsData.map((logement) => (
           <Card key={logement.id} logement={logement} />
