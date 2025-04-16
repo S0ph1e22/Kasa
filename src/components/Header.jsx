@@ -1,5 +1,6 @@
 import "../styles/Header.scss";
 import logo from "../assets/logo.png"
+import { NavLink } from "react-router-dom";
 
 function Header(){
     return(
@@ -8,10 +9,10 @@ function Header(){
             <nav>
                 <ul className="nav-list">
                     <li>
-                        <a href="/Home">Accueil</a> {/* pour ajouter le lien de navigation vers la page d'accueil*/}
+                        <NavLink to="/home" className="nav-link"> Accueil </NavLink>
                     </li>
                     <li>
-                        <a href={`/contacts/1`}>A Propos</a>
+                    <NavLink to="/contacts/1" className="nav-link"> A Propos </NavLink>
                     </li>
                 </ul>
             </nav>
