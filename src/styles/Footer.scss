@@ -1,9 +1,8 @@
 footer{
+    position: relative;
     width: 1440px;
     height: 209px;
-}
-
-.kasa-logo-footer{
-    width: 1440px;
-    height: 209px;
+    top: 500px;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

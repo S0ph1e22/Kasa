@@ -20,7 +20,7 @@ const router = createBrowserRouter([
     children :[
       {
         index:true, //correspond à la route /
-        element:<Navigate to="/home" replace/> //navigate redirige vers la page home pour avoir les logements et replace pour eviter de garder la redirection dans l'historique
+        element:<Navigate to="/home" replace/> //navigate redirige vers la page home donc app.jsx pour avoir les logements et replace pour eviter de garder la redirection dans l'historique
       },
       {
         path:"home", //route enfant
