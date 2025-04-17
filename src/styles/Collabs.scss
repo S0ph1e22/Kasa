@@ -1,0 +1,24 @@
+.collabs-a-propos{
+    display: flex;
+    color: white;
+    font-size: 24px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    background-color: rgba(255, 96, 96, 1);
+    font-weight: 700;
+    height: 52px;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+
+    p{
+        flex-direction: column;
+        text-align: left;
+        justify-content: center;
+    }
+
+    .collabs-icon:hover{
+        transform: rotate(180deg);
+    }
+
+}
