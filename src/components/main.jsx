@@ -9,6 +9,7 @@ import '../styles/index.css'
 import App from './App.jsx'
 import ErrorPage from "./Error.jsx";
 import APropos from "./Apropos.jsx";
+import '../styles/App.css'
 
 const router = createBrowserRouter([
   {
