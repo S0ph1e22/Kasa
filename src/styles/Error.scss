@@ -1,10 +1,12 @@
 #error-page{
+    position: relative;
+    top: 13em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: calc(100vh - 300px);
+    flex-grow: 1;
 
     h1{
        
