@@ -1,8 +1,9 @@
 footer{
     position: relative;
-    width: 1440px;
-    height: 209px;
-    top: 500px;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    height:223px ;
+    width: 100%;
+    top: 23em;
+    display: flex; 
+    justify-content: center;  
+    z-index: 10;
 }
