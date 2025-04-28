@@ -1,4 +1,4 @@
-//import { useRouteError } from "react-router-dom";
+//import { useRouteError } from "react-router-dom"
 import "../styles/Error.scss"
 import Footer from "../components/Footer.jsx";
 import Header from "../components/Header.jsx";
