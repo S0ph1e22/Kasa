@@ -25,10 +25,10 @@ function Collabs({ textTitle, textCollabs }) {
         className={`collabs-txt ${isOpen ? "open" : ""}`}
         style={{
           //définir dynamiquement la max height avec scollHeight, si ouvert, hauteur rélle du contenu sinon 0px
-          maxHeight: isOpen ? `${contentRef.current?.scrollHeight}px` : "0px" 
+          maxHeight: isOpen ? `${contentRef.current?.scrollHeight}px` : "0px", 
         }}
       >
-            <p>{textCollabs}</p>
+            <p className={isOpen ? "slide-down" : "slide-up"}>{textCollabs}</p>
           </div>
     </div>
   );

@@ -23,7 +23,8 @@
       color: black;
       font-weight: normal;
       text-align: left;   
-      transition: max-height 0.3s ease-in-out; 
+      transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+      overflow: hidden;
     }
 
     .collabs-title{
@@ -38,4 +39,37 @@
     .collabs-icon.open {
       transform: rotate(-180deg);
     }
-  } 
+
+    .slide-down{
+      animation: slideDown 0.3s ease forwards;
+    }
+
+    .slide-up{
+      animation: slideUp 0.3s ease forwards;
+    }
+
+    @keyframes slideDown {
+    from {
+      transform: translateY(-50%);
+      opacity: 0; //pour contrôler la visibilté de l'élément : complètement transparent
+    }
+
+  to {
+    transform: translateY(0);
+    opacity: 1; //totalement visible
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    to {
+      transform: translateY(-50%);
+      opacity: 0;
+    }
+  }
+
+} 
