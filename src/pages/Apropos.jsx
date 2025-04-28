@@ -1,6 +1,6 @@
 import '../styles/Apropos.scss';
-import Collabs from "./Collabs.jsx"
-import Banner from "./Banner.jsx";
+import Collabs from "../components/Collabs.jsx"
+import Banner from "../components/Banner.jsx";
 import banner_a_propos from "../assets/banner-a-propos.png";
 
 function APropos(){

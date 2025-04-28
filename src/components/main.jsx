@@ -6,9 +6,9 @@ import ReactDOM from "react-dom/client";
 import {createBrowserRouter,RouterProvider, Navigate} from "react-router-dom";
 import Root from "../routes/root.jsx";
 import '../styles/index.css'
-import App from './App.jsx'
-import ErrorPage from "./Error.jsx";
-import APropos from "./Apropos.jsx";
+import App from '../pages/App.jsx'
+import ErrorPage from "../pages/Error.jsx";
+import APropos from "../pages/Apropos.jsx";
 import '../styles/App.css'
 
 const router = createBrowserRouter([

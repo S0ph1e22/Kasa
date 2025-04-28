@@ -4,7 +4,7 @@ import '../styles/App.css'
 import React from 'react'
 import logementsData from '../logement.json'
 import Banner from "../components/Banner.jsx";
-import Card from "./Card";
+import Card from "../components/Card.jsx";
 import banner_home from "../assets/banner.png";
 
 function App() {

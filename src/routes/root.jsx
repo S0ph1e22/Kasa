@@ -9,7 +9,7 @@ export default function Root() {
     return (
       <>
        <Header /> {/*en-tête */}
-       <Outlet /> {/*app y est injecté */}
+       <Outlet /> {/*affiche le bon contenu selon l'url, donc contient app et apropos et error*/}
        <Footer /> {/*pied de page */}
       </>
     );
