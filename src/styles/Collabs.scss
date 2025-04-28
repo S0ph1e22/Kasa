@@ -17,12 +17,13 @@
     }
  
     .collabs-txt {
-      padding: 1rem;
-      background-color: #e5e7e6;
+      padding: 0.1rem;
+      background-color: #F6F6F6;
       font-size: 20px;
       color: black;
       font-weight: normal;
-      text-align: left;
+      text-align: left;   
+      transition: max-height 0.3s ease-in-out; 
     }
 
     .collabs-title{
@@ -32,7 +33,9 @@
 
     .collabs-icon {
       display: flex;
+      transition: transform 0.3s ease;
     }
-
+    .collabs-icon.open {
+      transform: rotate(-180deg);
+    }
   } 
-  
