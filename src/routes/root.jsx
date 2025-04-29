@@ -5,7 +5,7 @@ import Header from "../components/Header.jsx";
 import { Outlet } from "react-router-dom";
 
 export default function Root() {
-    console.log("root est appelée")
+ 
     return (
       <>
        <Header /> {/*en-tête */}

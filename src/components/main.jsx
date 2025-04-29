@@ -5,11 +5,12 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import {createBrowserRouter,RouterProvider, Navigate} from "react-router-dom";
 import Root from "../routes/root.jsx";
-import '../styles/index.css'
-import App from '../pages/App.jsx'
+import '../styles/index.css';
+import App from '../pages/App.jsx';
 import ErrorPage from "../pages/Error.jsx";
 import APropos from "../pages/Apropos.jsx";
-import '../styles/App.css'
+import Logements from "../pages/Logements.jsx";
+import '../styles/App.css';
 
 const router = createBrowserRouter([
   {
@@ -28,7 +29,11 @@ const router = createBrowserRouter([
       {
         path:"APropos", //page a propos
         element : <APropos/>, 
-      }
+      },
+      {
+        path :"Logements",
+        element : <Logements/>,
+      },
     ]
   },
 ]);
