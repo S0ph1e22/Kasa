@@ -31,7 +31,7 @@ const router = createBrowserRouter([
         element : <APropos/>, 
       },
       {
-        path :"Logements",
+        path :"Logements/:id",
         element : <Logements/>,
       },
     ]

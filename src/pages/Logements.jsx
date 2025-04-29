@@ -1,25 +1,26 @@
 import Collabs from "../components/Collabs";
 import logementsData from '../logement.json';
+import Carousel from "../components/Carousel.jsx";
 import React from "react";
 import "../styles/Logements.scss";
+import { useParams } from "react-router-dom";
 
 function Logements (){
-    return(
-        <div className="logement-picture">
-            {logementsData.map((logement)=>(
-            <div key={logement.id}>
-                <img src={logement.pictures}/>   
-                <h2>{logement.title}</h2>
-                <p>{logement.location}</p>
-                <p>{logement.tags}</p>
-                <Collabs textTitle="Description" textCollabs={logement.description} />
-                <Collabs textTitle="Equipement" textCollabs={logement.equipments} />
-                <p>{logement.name}</p>
-                <img src={logement.picture} />
-                {/*etoile */}
 
-            </div>             
-                ))}
+    const { id } =useParams();
+    const logement = logementsData.find (item=>item.id===id);
+
+    return(
+        <div className="logement-detail">
+            <Carousel pictures ={logement.pictures} />
+            <h2>{logement.title}</h2>
+            <p className="logement-location">{logement.location}</p>
+            <p className="logement-tag">{logement.tags}</p>
+            <Collabs textTitle="Description" textCollabs={logement.description} />
+            <Collabs textTitle="Equipement" textCollabs={logement.equipments} />
+            <p className="logement-host">{logement.host.name}</p>
+            <img className="image-host" src={logement.host.picture} />
+            {/*etoile */}          
         </div>
     )
 }

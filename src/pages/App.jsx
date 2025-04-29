@@ -15,7 +15,7 @@ function App() {
       <Banner image={banner_home} text="Chez vous, partout et ailleurs" /> {/*bannière */}
       <div className="logements-list">
         {logementsData.map((logement) => (
-          <Link key={logement.id}to={`/logement/${logement.id}`} className='card-link'>
+          <Link key={logement.id}to={`/Logements/${logement.id}`} className='card-link'> {/* pour rediriger la page */}
           <Card logement={logement} />
           </Link>
         ))}
