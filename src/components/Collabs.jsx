@@ -14,9 +14,9 @@ function Collabs({ textTitle, textCollabs }) {
   //icone ouverture/fermeture
   return (
     <div className="collabs-a-propos">
-      <div onClick={handleToggle} className="collabs-barre">
+      <div className="collabs-barre">
         <span className="collabs-title">{textTitle}</span>
-        <div className={`collabs-icon ${isOpen ? "open" : ""}`}>
+        <div className={`collabs-icon ${isOpen ? "open" : ""}`} onClick={handleToggle}>
             <FaChevronUp />
           </div>
         </div>
