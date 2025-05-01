@@ -1,0 +1,82 @@
+.logement-detail{
+   font-weight: 500;
+   font-family: 'Montserrat';
+   width: 1240px;
+   height: 643px;
+
+    h2{
+        font-weight: 500;
+        font-size: 36px;
+        color: #FF6060;
+        top: 470px;
+        position: relative;
+        text-align: left;
+    }
+
+    .logement-location{
+        top: 440px;
+        position: relative;
+        text-align: left;
+        font-size: 18px;
+        color: #000000;
+    }
+
+    .logement-tag{
+        top: 450px;
+        position: relative;
+        display: flex;
+        gap: 20px;
+
+        .one-tag{
+            width: 115px;
+            background-color: #FF6060;
+            font-weight: 700;
+            font-size: 14px;
+            color: white;
+            height: 25px;
+            border-radius: 10px;
+            align-items: center; 
+            justify-content: center;
+            display: flex;    
+            white-space: nowrap;   
+            padding: 0 20px;          
+        }
+    }
+
+    .collabs-logement{
+        top: 500px;
+        position: relative;
+        width: 1240px;
+        display: flex;
+        gap: 76px;
+        font-size: 18px;
+
+        >*{ //pour que chaque collabs est la mm width
+            width:582px;
+        }
+    }
+
+    .logement-host{
+        width: 167px;
+        height: 64px;
+        position: relative;
+        display: flex;
+        top: 225px;
+        float: right;
+        justify-content: center;
+        align-items: center;
+    
+
+        .name-host{
+        font-size: 18px;
+        color: #FF6060;
+        }
+        
+        .image-host{
+        height: 64px;
+        width: 64px;
+        border-radius : 64px;
+
+        }
+    }
+}

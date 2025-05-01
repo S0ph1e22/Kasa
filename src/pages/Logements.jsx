@@ -15,11 +15,19 @@ function Logements (){
             <Carousel pictures ={logement.pictures} />
             <h2>{logement.title}</h2>
             <p className="logement-location">{logement.location}</p>
-            <p className="logement-tag">{logement.tags}</p>
-            <Collabs textTitle="Description" textCollabs={logement.description} />
-            <Collabs textTitle="Equipement" textCollabs={logement.equipments} />
-            <p className="logement-host">{logement.host.name}</p>
-            <img className="image-host" src={logement.host.picture} />
+            <div className="logement-tag">
+                {logement.tags.map((tag,index)=>
+                <span key={index} className="one-tag"> {tag} </span>
+            )}
+            </div>
+            <div className="collabs-logement">
+                <Collabs textTitle="Description" textCollabs={logement.description} />
+                <Collabs textTitle="Equipement" textCollabs={logement.equipments} />
+            </div>
+            <div className="logement-host">
+                <p className="name-host">{logement.host.name}</p>
+                <img className="image-host" src={logement.host.picture} />
+            </div>
             {/*etoile */}          
         </div>
     )
