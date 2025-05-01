@@ -1,10 +1,42 @@
 .carousel{
     top: 163px;
     position: absolute;
+    width: 1240px;
 
     img{
     width: 1240px;
     height: 415px;
     border-radius: 25px;
+    }
+
+    .btn-carousel{
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+    
+
+        .btn-next,
+        .btn-prev {
+            background-color: transparent;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            border: none;
+        }
+
+        .btn-next:focus,
+        .btn-prev:focus{
+            outline: none;
+        }
+       
+        svg{
+            width: 46.68px;
+            height: 79.2px;
+            color: white;
+            
+        }
     }
 }

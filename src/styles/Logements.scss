@@ -65,11 +65,14 @@
         float: right;
         justify-content: center;
         align-items: center;
+        gap: 10px;
     
 
         .name-host{
         font-size: 18px;
         color: #FF6060;
+        width: 93px;
+        text-align: right;
         }
         
         .image-host{

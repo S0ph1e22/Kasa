@@ -1,4 +1,6 @@
 import React, { useState} from "react";
+import { IoIosArrowForward } from "react-icons/io";
+import { IoIosArrowBack } from "react-icons/io";
 import "../styles/Carousel.scss"
 
 function Carousel ({pictures}){
@@ -12,12 +14,13 @@ function Carousel ({pictures}){
     return(
         <div className="carousel">
             <img src={pictures[current]} alt={`Slide ${current +1}`}/>
-
             {total > 1 && (
                 <>
-                <button onClick={preview} className="btn-prev"></button>
-                <button onClick={next} className="btn-next"></button>
-                <div className="carousel-count">{current + 1 } / {total} </div>
+                    <div className="btn-carousel">
+                        <button onClick={next} className="btn-next"> <IoIosArrowBack /> </button> 
+                        <button onClick={preview} className="btn-prev"> <IoIosArrowForward /> </button> 
+                    </div>
+                    <div className="carousel-count">{current + 1 } / {total} </div>
                 </>
             )}
         </div>
