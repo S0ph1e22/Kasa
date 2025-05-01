@@ -1,20 +1,20 @@
 .logement-detail{
    font-weight: 500;
    font-family: 'Montserrat';
-   width: 1240px;
-   height: 643px;
+   position: relative;
 
     h2{
         font-weight: 500;
         font-size: 36px;
         color: #FF6060;
-        top: 470px;
+        top: 450px;
         position: relative;
         text-align: left;
     }
 
     .logement-location{
-        top: 440px;
+        top: 420px;
+        margin: 0;
         position: relative;
         text-align: left;
         font-size: 18px;
@@ -22,7 +22,7 @@
     }
 
     .logement-tag{
-        top: 450px;
+        top: 440px;
         position: relative;
         display: flex;
         gap: 20px;
@@ -44,12 +44,13 @@
     }
 
     .collabs-logement{
-        top: 500px;
+        top: 470px;
         position: relative;
         width: 1240px;
         display: flex;
         gap: 76px;
         font-size: 18px;
+        margin-bottom: 125px;
 
         >*{ //pour que chaque collabs est la mm width
             width:582px;
@@ -57,15 +58,12 @@
     }
 
     .logement-host{
-        width: 167px;
-        height: 64px;
-        position: relative;
+        position: absolute;
         display: flex;
-        top: 225px;
-        float: right;
-        justify-content: center;
+        top: 440px;
         align-items: center;
         gap: 10px;
+        right: 35px;
     
 
         .name-host{
