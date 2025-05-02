@@ -17,8 +17,8 @@ function Carousel ({pictures}){
             {total > 1 && (
                 <>
                     <div className="btn-carousel">
-                        <button onClick={next} className="btn-next"> <IoIosArrowBack /> </button> 
-                        <button onClick={preview} className="btn-prev"> <IoIosArrowForward /> </button> 
+                        <button onClick={preview} className="btn-prev"> <IoIosArrowBack /> </button> 
+                        <button onClick={next} className="btn-next"> <IoIosArrowForward /> </button> 
                     </div>
                     <div className="carousel-count">{current + 1 } / {total} </div>
                 </>
