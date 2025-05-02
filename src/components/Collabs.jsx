@@ -28,7 +28,15 @@ function Collabs({ textTitle, textCollabs }) {
           maxHeight: isOpen ? `${contentRef.current?.scrollHeight}px` : "0px", 
         }}
       >
-            <p className={isOpen ? "slide-down" : "slide-up"}>{textCollabs}</p>
+        {Array.isArray(textCollabs) ? (   //si c'est un tableau :
+          <ul className={isOpen ? "slide-down" : "slide-up"}> {/*creation liste pour les equipements*/}
+            {textCollabs.map((item, index) => (         //pour chaque element du tableau avec.map et crée un li
+            <li key={index}>{item}</li>
+            ))}
+          </ul>
+        ) : (
+       <p className={isOpen ? "slide-down" : "slide-up"}>{textCollabs}</p> //sinon affiche le txt dans un p
+)}
           </div>
     </div>
   );

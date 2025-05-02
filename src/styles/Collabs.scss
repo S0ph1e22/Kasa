@@ -23,7 +23,14 @@
       text-align: left;   
       transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
       overflow: hidden;
+      padding-left: 10px;
     }
+
+    .collabs-txt ul{
+      list-style: none;
+      padding: 0;
+    }
+    
 
     .collabs-title{
       flex: 1;
