@@ -5,8 +5,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import {createBrowserRouter,RouterProvider, Navigate} from "react-router-dom";
 import Root from "../routes/root.jsx";
-import '../styles/index.css';
-import App from '../pages/App.jsx';
+import Home from '../pages/Home.jsx';
 import ErrorPage from "../pages/Error.jsx";
 import APropos from "../pages/Apropos.jsx";
 import Logements from "../pages/Logements.jsx";
@@ -24,7 +23,7 @@ const router = createBrowserRouter([
       },
       {
         path:"home", //page home
-        element : <App />, //composant afficher quand on est sur /home
+        element : <Home />, //composant afficher quand on est sur /home
       },
       {
         path:"APropos", //page a propos
