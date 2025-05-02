@@ -21,8 +21,12 @@ function Logements (){
             )}
             </div>
             <div className="collabs-logement">
-                <Collabs textTitle="Description" textCollabs={logement.description} />
-                <Collabs textTitle="Equipement" textCollabs={logement.equipments} />
+                <div className="description-logement">
+                    <Collabs textTitle="Description" textCollabs={logement.description} /> 
+                </div>
+                <div className="equipement-logement">
+                    <Collabs textTitle="Equipement" textCollabs={logement.equipments} />
+                </div>
             </div>
             <div className="logement-host">
                 <p className="name-host">{logement.host.name}</p>
