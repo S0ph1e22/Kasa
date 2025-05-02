@@ -9,6 +9,11 @@ function Logements (){
 
     const { id } =useParams();
     const logement = logementsData.find (item=>item.id===id);
+    const rating = parseInt(logement.rating); //recup la note dans le fichier json
+    const totalStars = 5 ;  //nb d'étoile
+    const stars = Array.from ({length: totalStars}, (_, index) => (  //tableau de 5 éléments avec array from
+        <span key={index} className={index < rating ? "star full" : "star empty"}> ★ </span> //le tableau renvoie une etoile pour chaque elements
+    ))
 
     return(
         <div className="logement-detail">
@@ -32,7 +37,9 @@ function Logements (){
                 <p className="name-host">{logement.host.name}</p>
                 <img className="image-host" src={logement.host.picture} />
             </div>
-            {/*etoile */}          
+            <div className="logement-rating">
+                {stars}
+            </div>          
         </div>
     )
 }

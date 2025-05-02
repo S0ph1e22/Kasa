@@ -85,4 +85,20 @@
 
         }
     }
+
+    .logement-rating{
+        position: absolute;
+        top: 530px;
+        right: 35px;
+        font-size: 36px;
+        
+
+        .star{
+            color:#E3E3E3 ;
+        }
+
+        .star.full{
+            color:#FF6060 ;
+        }
+    }
 }
