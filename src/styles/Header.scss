@@ -7,7 +7,7 @@ header{
     align-items: center;
     justify-content: space-between;  
     z-index: 1000;
-   
+
     img{
         display: block;
     }
@@ -27,4 +27,24 @@ header{
             text-decoration: underline;
         }
     }
+
+    @media (min-width : 375px ) and (max-width : 768px) {
+        width: 100%;
+       
+
+        img {
+            width: 145px; // logo plus petit
+        }
+
+        .nav-list {
+            gap: 57px; // liens plus serrés
+
+            .nav-link {
+                font-size: 18px; // texte plus petit
+                white-space: nowrap;
+            }
+        }
+    
+    }
+   
 }
