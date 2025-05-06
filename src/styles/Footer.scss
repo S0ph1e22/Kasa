@@ -6,4 +6,39 @@ footer{
     display: flex; 
     justify-content: center;  
     z-index: 10;
-}
+
+    .kasa-logo-footer-mobile{
+        display: none;
+    }
+
+    @media (max-width: 768px) {
+        .kasa-logo-footer {
+          display: none;
+        }
+    
+        .kasa-logo-footer-mobile {
+          display: block;
+          width: 768px;
+          top : -8em;
+          position: relative;
+        }
+      }
+    
+      @media (max-width: 600px) {
+        .kasa-logo-footer-mobile {
+          width: 600px;
+        }
+      }
+    
+      @media (max-width: 480px) {
+        .kasa-logo-footer-mobile {
+          width: 490px;
+        }
+      }
+    
+      @media (max-width: 375px) {
+        .kasa-logo-footer-mobile {
+          width: 375px;
+        }
+      }
+    }
