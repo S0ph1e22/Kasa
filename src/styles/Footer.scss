@@ -1,61 +1,33 @@
 footer{
     position: relative;
-    height:209px ;
-    width: 100%;
-    max-width: 1440px;
-    top: 110px;
-    display: flex; 
-    justify-content: center;  
-    z-index: 10;
-    margin: 0 auto;
+    height: 209px;
+    width: 100%;              /* Prend toute la largeur de la fenêtre */
+    max-width: 1440px;        /* Limite la largeur à 1440px */
+    margin: 110px auto 0 auto;
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 200px;
 
-
-    img {
-        width: 100%; 
-        height: auto; 
-        display: block; 
-        margin: 0; 
-        width: 1440px;
+    .kasa-logo-footer {
+        width: 122px;
+        height: 39.44px;
+        margin-bottom: 40px;
     }
 
-    .kasa-logo-footer-mobile{
-        display: none;
+    p{
+        color: white;
+        font-size: 24px;
+        top: 120px;
+        margin: 0;
+        font-weight: 500;
     }
 
-    /*@media (max-width: 768px) {
-        .kasa-logo-footer {
-          display: none;
-        }
-    
-        .kasa-logo-footer-mobile {
-            display: block;
-            width: 100%;
-            min-width: 768px; 
-            margin-left: -15px;
-        }
-      }
-    
-      @media (max-width: 600px) {
-        .kasa-logo-footer-mobile {
-          min-width: 600px;
-          height: 209px;
-        }
-      }
-    
-      @media (max-width: 480px) {
-        .kasa-logo-footer-mobile {
-          min-width: 490px;
-          height: 209px;
-        }
-      }
-    
-      @media (max-width: 375px) {
-        .kasa-logo-footer-mobile {
-          min-width: 375px;
-          height: 209px;
-        }
-      }
-        */
+   
+
+   
         
     }
     
