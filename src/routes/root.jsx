@@ -10,7 +10,7 @@ export default function Root() {
       <>
        <Header /> {/*en-tête */}
        <Outlet /> {/*affiche le bon contenu selon l'url, donc contient app et apropos et error*/}
-       <Footer /> {/*pied de page */}
+       <Footer/>
       </>
     );
   }

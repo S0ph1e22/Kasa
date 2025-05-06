@@ -11,6 +11,7 @@ import APropos from "../pages/Apropos.jsx";
 import Logements from "../pages/Logements.jsx";
 import '../styles/App.css';
 
+
 const router = createBrowserRouter([
   {
     path: "/",
