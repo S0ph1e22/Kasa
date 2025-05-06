@@ -26,6 +26,22 @@
       font-weight: 700;
     }
 
+
+ 
+    @media (max-width: 1440px) and (min-width: 769px) {
+        height: auto;
+    
+        img {
+          width: 90vw;
+          height: auto;
+        }
+    
+        p {
+          font-size: clamp(24px, 4vw, 36px);
+          width: 85%;
+        }
+      }
+
     @media (max-width : 768px){
         width: 335px;
         height: auto;
@@ -34,7 +50,6 @@
         img {
           width: 90vw;
           height: 111px;
-          
         }
     
         p {
@@ -44,13 +59,5 @@
         }
 
     }
-
-      @media (max-width: 375px) {
-       img{
-        margin-left: -15px;
-       }
-    
-       
-      }
   }
   
