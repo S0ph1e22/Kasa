@@ -1,5 +1,4 @@
 header{
-    
     position: relative;
     width: 1240px;
     height: 68px;
@@ -27,6 +26,25 @@ header{
             text-decoration: underline;
         }
     } 
+
+    @media (max-width: 1440px){
+        width: 100%;
+        min-width: 335px;
+       
+
+        img {
+            width: 145px;
+        }
+
+        .nav-list {
+            gap: 26px; 
+
+            .nav-link {
+                font-size: 24px; 
+                white-space: nowrap;
+            }
+        }
+    }
 
     @media (min-width : 375px ) and (max-width : 768px) {
         width: 100%;
