@@ -1,9 +1,9 @@
 footer{
     position: relative;
-    height:223px ;
+    height:209px ;
     width: 100%;
-    top: 23em;
-    margin-bottom: 0;
+    max-width: 1440px;
+    top: 110px;
     display: flex; 
     justify-content: center;  
     z-index: 10;
@@ -11,17 +11,18 @@ footer{
 
 
     img {
-        width: 100%; /* L'image prend toute la largeur disponible du footer */
-        height: auto; /* Maintien les proportions de l'image */
-        display: block; /* Enlève les marges par défaut des images */
-        margin: 0; /* S'assure qu'il n'y ait pas de marge à gauche */
+        width: 100%; 
+        height: auto; 
+        display: block; 
+        margin: 0; 
+        width: 1440px;
     }
 
     .kasa-logo-footer-mobile{
         display: none;
     }
 
-    @media (max-width: 768px) {
+    /*@media (max-width: 768px) {
         .kasa-logo-footer {
           display: none;
         }
@@ -54,7 +55,7 @@ footer{
           height: 209px;
         }
       }
-        
+        */
         
     }
     
