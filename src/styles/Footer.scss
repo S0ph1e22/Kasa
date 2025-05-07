@@ -1,15 +1,14 @@
-footer{
-    position: relative;
-    height: 209px;
-    width: 100%;              /* Prend toute la largeur de la fenêtre */
-    max-width: 1440px;        /* Limite la largeur à 1440px */
-    margin: 110px auto 0 auto;
+.footer {
+    height: 209px;     
     display: flex;
     background-color: black;
+    justify-content: center;
+    max-width: 1440px;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    top: 200px;
+    margin-top: 80px; 
+    margin-left: auto; 
+    margin-right: auto; 
 
     .kasa-logo-footer {
         width: 122px;
@@ -17,17 +16,10 @@ footer{
         margin-bottom: 40px;
     }
 
-    p{
+    p {
         color: white;
         font-size: 24px;
-        top: 120px;
         margin: 0;
         font-weight: 500;
     }
-
-   
-
-   
-        
-    }
-    
+}

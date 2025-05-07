@@ -8,9 +8,11 @@ export default function Root() {
  
     return (
       <>
-       <Header /> {/*en-tête */}
-       <Outlet /> {/*affiche le bon contenu selon l'url, donc contient app et apropos et error*/}
-       <Footer/>
+        <div className="root-container">
+          <Header /> {/*en-tête */}
+          <Outlet /> {/*affiche le bon contenu selon l'url, donc contient app et apropos et error*/}
+        </div>
+        <Footer/>
       </>
     );
   }

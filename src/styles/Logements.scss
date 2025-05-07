@@ -1,106 +1,105 @@
 .logement-detail{
-   font-weight: 500;
-   font-family: 'Montserrat';
-   position: relative;
-
-    h2{
-        font-weight: 500;
-        font-size: 36px;
-        color: #FF6060;
-        top: 450px;
-        position: relative;
-        text-align: left;
-    }
-
-    .logement-location{
-        top: 420px;
-        margin: 0;
-        position: relative;
-        text-align: left;
-        font-size: 18px;
-        color: #000000;
-    }
-
-    .logement-tag{
-        top: 440px;
-        position: relative;
-        display: flex;
-        gap: 20px;
-
-        .one-tag{
-            width: 115px;
-            background-color: #FF6060;
-            font-weight: 700;
-            font-size: 14px;
-            color: white;
-            height: 25px;
-            border-radius: 10px;
-            align-items: center; 
-            justify-content: center;
-            display: flex;    
-            white-space: nowrap;   
-            padding: 0 20px;          
-        }
-    }
-
-    .collabs-logement{
-        top: 470px;
-        position: relative;
-        width: 1240px;
-        display: grid;
-        margin-bottom: 125px;
-        grid-template-columns: 1fr 1fr;
-        gap: 76px;
-
-        >*{ //pour que chaque collabs est la mm width
-            width:582px;
-            font-size: 18px;
-        }
-
-        .collabs-title{
-            font-size: 18px;
-        }
-    }
-
-    .logement-host{
-        position: absolute;
-        display: flex;
-        top: 440px;
-        align-items: center;
-        gap: 10px;
-        right: 35px;
-    
-
-        .name-host{
-        font-size: 18px;
-        color: #FF6060;
-        width: 93px;
-        text-align: right;
-        }
-        
-        .image-host{
-        height: 64px;
-        width: 64px;
-        border-radius : 64px;
-
-        }
-    }
-
-    .logement-rating{
-        position: absolute;
-        top: 530px;
-        right: 35px;
-        font-size: 36px;
-        
-
-        .star{
-            color:#E3E3E3 ;
-        }
-
-        .star.full{
-            color:#FF6060 ;
-        }
-    }
-
-   
-}
+    font-weight: 500;
+    font-family: 'Montserrat';
+    position: relative;
+    margin-bottom: 370px;
+ 
+     h2{
+         font-weight: 500;
+         font-size: 36px;
+         color: #FF6060;
+         top: 450px;
+         position: relative;
+         text-align: left;
+     }
+ 
+     .logement-location{
+         top: 420px;
+         margin: 0;
+         position: relative;
+         text-align: left;
+         font-size: 18px;
+         color: #000000;
+     }
+ 
+     .logement-tag{
+         top: 440px;
+         position: relative;
+         display: flex;
+         gap: 20px;
+ 
+         .one-tag{
+             width: 115px;
+             background-color: #FF6060;
+             font-weight: 700;
+             font-size: 14px;
+             color: white;
+             height: 25px;
+             border-radius: 10px;
+             align-items: center; 
+             justify-content: center;
+             display: flex;    
+             white-space: nowrap;   
+             padding: 0 20px;          
+         }
+     }
+ 
+     .collabs-logement{
+         top: 470px;
+         position: relative;
+         width: 1240px;
+         display: grid;
+         margin-bottom: 125px;
+         grid-template-columns: 1fr 1fr;
+         gap: 76px;
+ 
+         >*{ //pour que chaque collabs est la mm width
+             width:582px;
+             font-size: 18px;
+         }
+ 
+         .collabs-title{
+             font-size: 18px;
+         }
+     }
+ 
+     .logement-host{
+         position: absolute;
+         display: flex;
+         top: 440px;
+         align-items: center;
+         gap: 10px;
+         right: 35px;
+     
+ 
+         .name-host{
+         font-size: 18px;
+         color: #FF6060;
+         width: 93px;
+         text-align: right;
+         }
+         
+         .image-host{
+         height: 64px;
+         width: 64px;
+         border-radius : 64px;
+ 
+         }
+     }
+ 
+     .logement-rating{
+         position: absolute;
+         top: 530px;
+         right: 35px;
+         font-size: 36px;
+         
+ 
+         .star{
+             color:#E3E3E3 ;
+         }
+ 
+         .star.full{
+             color:#FF6060 ;
+         }
+     }
+ }
