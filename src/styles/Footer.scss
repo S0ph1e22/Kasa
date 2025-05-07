@@ -22,4 +22,14 @@
         margin: 0;
         font-weight: 500;
     }
+
+    @media (max-width : 768px){
+        margin-top: 180px;
+        min-width: 375px; 
+
+        p{
+            font-size: 12px;
+            width: 120px;
+        }
+    }
 }
