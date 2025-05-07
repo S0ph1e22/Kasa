@@ -6,9 +6,15 @@
     margin: 0 auto;
     display: grid;
 
+    @media (max-width:768px){
+        margin-bottom: -90px;
+    }
+
     @media (max-width: 1240px) and (min-width: 375px) {
         width: 100%;
         max-width: 1023px;
+        min-width:335px ;
+        min-height: 180px;
     }
 
 }
