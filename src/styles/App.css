@@ -20,7 +20,7 @@
   box-sizing: border-box;
   margin: 0 auto;
   
-  @media (max-width: 1024px) and (min-width: 769px) {
+  @media (max-width: 1240px) and (min-width: 769px) {
   grid-template-columns: repeat(2,1fr);
   }
 
