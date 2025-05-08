@@ -18,28 +18,35 @@ function Logements (){
     return(
         <div className="logement-detail">
             <Carousel pictures ={logement.pictures} />
-            <h2>{logement.title}</h2>
-            <p className="logement-location">{logement.location}</p>
+            
+            <div className="txt-logement">
+                <h2>{logement.title}</h2>
+                <p className="logement-location">{logement.location}</p>
+            </div>
+
             <div className="logement-tag">
                 {logement.tags.map((tag,index)=>
                 <span key={index} className="one-tag"> {tag} </span>
             )}
             </div>
+
+            <div className="logement-host">
+                <p className="name-host">{logement.host.name}</p>
+                <img className="image-host" src={logement.host.picture} />
+            </div>
+
+            <div className="logement-rating">
+                {stars}
+            </div>     
+
             <div className="collabs-logement">
                 <div className="description-logement">
                     <Collabs textTitle="Description" textCollabs={logement.description} /> 
                 </div>
                 <div className="equipement-logement">
-                    <Collabs textTitle="Equipement" textCollabs={logement.equipments} />
+                    <Collabs textTitle="Equipements" textCollabs={logement.equipments} />
                 </div>
-            </div>
-            <div className="logement-host">
-                <p className="name-host">{logement.host.name}</p>
-                <img className="image-host" src={logement.host.picture} />
-            </div>
-            <div className="logement-rating">
-                {stars}
-            </div>          
+            </div>     
         </div>
     )
 }
