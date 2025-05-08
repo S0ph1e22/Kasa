@@ -1,7 +1,8 @@
 .carousel{
     position: absolute;
-    width: 1240px;
+    max-width: 1240px;
     top: 20px;
+    margin: 0 auto;
 
     img{
     width: 1240px;
@@ -33,10 +34,9 @@
         }
        
         svg{
-            width: 46.68px;
-            height: 79.2px;
+            width: clamp(11.67px, 6vw, 46.68px);
+            height: clamp(19.8px, 10vw, 79.2px);
             color: white;
-            
         }
     }
 
@@ -48,4 +48,31 @@
         position: relative;
         color: white;
     }
+
+    @media (min-width:769px) and (max-width: 1240px){
+        left: -30px;
+        
+       img{
+        width: clamp(705px, 100vw, 1240px);
+        height: 415px;
+       }
+    }
+
+    @media (min-width : 375px ) and (max-width : 768px) {
+        min-width: 335px;
+        min-height: 255px;
+        width: 100%; 
+       
+        .carousel-count{
+        display: none;
+       }
+
+       img{
+        min-width: 335px;
+        height: clamp(255px, 54vw, 415px);
+        width: 100%; 
+       }
+    
+    }
+   
 }
