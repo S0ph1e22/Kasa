@@ -106,6 +106,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 76px;
+        top: 320px;
 
         >*{ //pour que chaque collabs est la mm width
             width:582px;
@@ -133,47 +134,44 @@
             }
         }
 
-        .txt-logement{
-            h2{
-                font-size: clamp(18px, 2.5vw, 36px );
+        .info-position{ 
+            .txt-logement{
+                h2{
+                    font-size: clamp(18px, 2.5vw, 36px );
+                    }
+            
+                .logement-location{
+                    font-size: clamp(14px, 2.5vw, 18px);
+                }       
+            }
+        }
+
+        .info-proprio{
+            .logement-host{
+                    .name-host{
+                        font-size: clamp(15px, 2.5vw, 18px);
+                    }
+                    .image-host{
+                        height: clamp(48px, 2.5vw,64px);
+                        width: clamp(48px, 2.5vw,64px);
+                    }
+            }
+            .logement-tag{
+                    .one-tag{
+                        font-size: clamp(12px, 2.5vw,14px);   
+                        width: clamp(99px, 2.5vw,115px ) ;
+                        height: clamp(21px, 2.5vw, 25px) ;     
+                    }
                 }
-        
-               .logement-location{
-                font-size: clamp(14px, 2.5vw, 18px);
-               }        
-
+                .logement-rating{
+                    font-size: clamp(27px, 2.5vw, 36px );
+                }
         }
-
-       .logement-host{
-            .name-host{
-                font-size: clamp(15px, 2.5vw, 18px);
-            }
-            .image-host{
-                height: clamp(48px, 2.5vw,64px);
-                width: clamp(48px, 2.5vw,64px);
-            }
-       }
-       .logement-tag{
-            .one-tag{
-                font-size: clamp(12px, 2.5vw,14px);   
-                width: clamp(99px, 2.5vw,115px ) ;
-                height: clamp(21px, 2.5vw, 25px) ;     
-            }
-        }
-        .logement-rating{
-            font-size: clamp(27px, 2.5vw, 36px );
-        }
-    
     }
 
     @media (min-width : 375px ) and (max-width : 768px) {
         height: 513px;
         margin-bottom: 0;
-
-        .info{
-            display: flex;
-            flex-direction: column;
-        }
 
        .collabs-logement{
         display: grid;
@@ -189,40 +187,44 @@
             }
        }
   
-       .txt-logement{
-        position: relative;
-        height: 73px;
-        h2{
-            font-size: clamp(10px, 2.5vw, 18px );
-           }
-           
-           .logement-location{
-            font-size: clamp(14px, 2.5vw, 16px);
-           }
-       }
-      
+       .info-position{
+            .txt-logement{
+                position: relative;
+                height: 73px;
 
-       .logement-host{
-            .name-host{
-                font-size: clamp(12px, 2.5vw, 15px);
-                width: 80px;
+                h2{
+                    font-size: clamp(10px, 2.5vw, 18px );
+                }
+                
+                .logement-location{
+                    font-size: clamp(14px, 2.5vw, 16px);
+                }
             }
-            .image-host{
-                height: clamp(32px, 2.5vw,48px );
-                width: clamp(32px, 2.5vw, 48px);
-            }
-       }
-       .logement-tag{
-            .one-tag{
-                font-size: clamp(10px, 2.5vw,12px);        
-                width: clamp(84px, 2.5vw,99px ) ;
-                height: clamp(18px, 2.5vw,21px ) ;
+            .logement-tag{
+                .one-tag{
+                    font-size: clamp(10px, 2.5vw,12px);        
+                    width: clamp(84px, 2.5vw,99px ) ;
+                    height: clamp(18px, 2.5vw,21px ) ;
+                }
             }
         }
 
-        .logement-rating{
-            font-size: clamp(18px, 2.5vw, 27px);
-        }
+        .info-proprio{
+            .logement-host{
+                    .name-host{
+                        font-size: clamp(12px, 2.5vw, 15px);
+                        width: 80px;
+                    }
+                    .image-host{
+                        height: clamp(32px, 2.5vw,48px );
+                        width: clamp(32px, 2.5vw, 48px);
+                    }
+            }
+
+            .logement-rating{
+                font-size: clamp(18px, 2.5vw, 27px);
+            }
+    }
  }
 
 }

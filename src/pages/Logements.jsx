@@ -44,7 +44,7 @@ function Logements (){
                         {stars}
                     </div>     
                 </div>
-                </div>  
+                  
                 <div className="collabs-logement">
                     <div className="description-logement">
                         <Collabs textTitle="Description" textCollabs={logement.description} /> 
@@ -53,7 +53,7 @@ function Logements (){
                         <Collabs textTitle="Equipements" textCollabs={logement.equipments} />
                     </div>
                 </div>
-               
+            </div>
         </div>
     )
 }
