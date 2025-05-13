@@ -6,9 +6,7 @@ import banner_a_propos from "../assets/banner-a-propos.png";
 function APropos(){
 return(
     <>
-        <div className='a-propos-banner'>
-            <Banner image={banner_a_propos} />
-        </div>
+        <Banner image={banner_a_propos} />
         <div className='txt-collabs'>
             <Collabs textTitle="Fiabilité " textCollabs="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes."/>
             <Collabs textTitle="Respect" textCollabs="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme." />
