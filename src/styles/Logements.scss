@@ -2,13 +2,16 @@
     font-weight: 500;
     font-family: 'Montserrat';
     position: relative;
+    max-width: 1240px;
     
     .info{
         max-width: 1440px;
-        height: 643px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
     }
     .info-position{
-        top: 450px;
         position: relative;
         height: auto;
         padding-top: 20px;
@@ -60,8 +63,7 @@
  
      .info-proprio{
         position: relative;
-        top: 300px;
-        left: 65em;
+        margin-left: auto;
         width: 200px;
         padding-top: 20px;
 
@@ -106,7 +108,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 76px;
-        top: 320px;
+        padding-top: 20px;
 
         >*{ //pour que chaque collabs est la mm width
             width:582px;
@@ -119,11 +121,13 @@
     }
 
     @media (min-width:769px) and (max-width: 1240px){
+        display: flex;
+        flex-direction: column;
+
         .collabs-logement{
             width: 100%;
             display: grid;
-            place-items: center;
-            
+
             >*{
                 width: clamp(375px, 100%, 582px);
                 position: relative;
@@ -135,6 +139,8 @@
         }
 
         .info-position{ 
+            display: flex;
+            flex-direction: column;
             .txt-logement{
                 h2{
                     font-size: clamp(18px, 2.5vw, 36px );
@@ -147,6 +153,8 @@
         }
 
         .info-proprio{
+            display: flex;
+            flex-direction: column;
             .logement-host{
                     .name-host{
                         font-size: clamp(15px, 2.5vw, 18px);

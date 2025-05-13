@@ -17,9 +17,7 @@ function Logements (){
 
     return(
         <div className="logement-detail">
-            <div className="carousel">
-                <Carousel pictures ={logement.pictures} />
-            </div>    
+            <Carousel pictures ={logement.pictures} />
             <div className="info">
                 <div className="info-position">
                     <div className="txt-logement">

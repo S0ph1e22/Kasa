@@ -1,5 +1,5 @@
 .carousel{
-    position: absolute;
+    position: relative;
     max-width: 1240px;
     top: 20px;
     margin: 0 auto;
@@ -66,7 +66,7 @@
         display: none;
        }
 
-       img{
+       img { 
         min-width: 335px;
         height: clamp(255px, 54vw, 415px);
         width: 100%; 
