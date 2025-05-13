@@ -12,11 +12,9 @@
 }
 
 .logements-list{
-  position: relative;
   width: 100%;
   max-width: 1240px;
   min-height: 350px;
-  top: 60px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
   gap: 30px; 
@@ -24,17 +22,14 @@
   border-radius: 10px;    
   padding : 50px ;
   box-sizing: border-box;
-  margin: 0 auto;
-  left: 40px;
+  margin-top: clamp(40px,5vw,80px) ;
 }
   
   @media (max-width: 1240px) and (min-width: 769px) {
   .logements-list{
-  grid-template-columns: repeat(2,1fr);
-  left: 15px;
+    grid-template-columns: repeat(2,1fr);
   }
 }
-
 
  @media (max-width: 768px){
   .logements-list{
@@ -42,13 +37,9 @@
     padding: 0px;;
     min-width: 335px;
     margin-bottom: -120px;
-    left: 15px;
- }
+  }
 }
 
  @media (min-width: 375px){
-  .logements-list{
-  margin-left: -20px;
   
- }
  }
