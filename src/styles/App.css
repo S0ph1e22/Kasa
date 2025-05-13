@@ -1,13 +1,13 @@
 #root {
   width: 100%;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0;
   text-align: center;
 
   .root-container {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 1rem;
   }
 }
 
@@ -26,32 +26,29 @@
   box-sizing: border-box;
   margin: 0 auto;
   left: 40px;
+}
   
   @media (max-width: 1240px) and (min-width: 769px) {
+  .logements-list{
   grid-template-columns: repeat(2,1fr);
   left: 15px;
   }
+}
 
 
  @media (max-width: 768px){
+  .logements-list{
     background-color: white;
     padding: 0px;;
     min-width: 335px;
     margin-bottom: -120px;
     left: 15px;
  }
-
- @media (min-width: 375px){
-  margin-left: -20px;
- }
-
-
 }
 
-
-
-
-
-
-
-
+ @media (min-width: 375px){
+  .logements-list{
+  margin-left: -20px;
+  
+ }
+ }
