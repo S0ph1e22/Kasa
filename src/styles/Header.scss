@@ -10,6 +10,9 @@ header{
 
     img{
         display: block;
+        height: 68px;
+        width: 210.32px;
+        transition: width 0.3s ease, height 0.3s ease;
     }
 
     .nav-list {
@@ -28,20 +31,21 @@ header{
         }
     } 
 
-    @media (max-width: 1240px){
+    @media (max-width: 1240px) and (min-width: 769px){
         width: 100%;
         min-width: 335px;
        
 
         img {
-            width: 145px;
+            width: clamp(177px, 7vw, 210px);
+            height: clamp(57px,5vw,46.88px);
         }
 
         .nav-list {
             gap: 26px; 
 
             .nav-link {
-                font-size: 24px; 
+                font-size: clamp(18px,2.5vw,24px); 
                 white-space: nowrap;
             }
         }
@@ -50,17 +54,17 @@ header{
     @media (min-width : 375px ) and (max-width : 768px) {
         width: 100%;
         min-width: 335px;
-       
 
         img {
-            width: 145px;
+            width: clamp(145px, 8vw, 177px);
+            height: clamp(46.88px, 6vw, 57px);
         }
 
         .nav-list {
             gap: 26px; 
 
             .nav-link {
-                font-size: 12px; 
+                font-size: clamp(12px,2.5vw,18px); 
                 white-space: nowrap;
             }
         }
