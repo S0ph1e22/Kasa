@@ -23,23 +23,16 @@
   padding : 50px ;
   box-sizing: border-box;
   margin-top: clamp(40px,5vw,80px) ;
-}
+
   
   @media (max-width: 1240px) and (min-width: 769px) {
-  .logements-list{
-    grid-template-columns: repeat(2,1fr);
+      grid-template-columns: repeat(2,1fr);
+  }
+
+ @media (max-width: 768px) and (min-width: 375px){
+      background-color: white;
+      padding: 0px;;
+      min-width: 335px;
+    
   }
 }
-
- @media (max-width: 768px){
-  .logements-list{
-    background-color: white;
-    padding: 0px;;
-    min-width: 335px;
-    margin-bottom: -120px;
-  }
-}
-
- @media (min-width: 375px){
-  
- }
