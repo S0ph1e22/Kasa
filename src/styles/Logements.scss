@@ -3,6 +3,8 @@
     font-family: 'Montserrat';
     position: relative;
     max-width: 1240px;
+    display: flex;
+    flex-direction: column;
     
     .info{
         max-width: 1440px;
@@ -65,7 +67,7 @@
         position: relative;
         margin-left: auto;
         width: 200px;
-        padding-top: 20px;
+        padding-top: 5px;
 
         .logement-host{
             position: relative;
@@ -129,10 +131,12 @@
             display: grid;
 
             >*{
-                width: clamp(375px, 100%, 582px);
-                position: relative;
-                height: 100%;
+            position: relative;
+            height: 100%;
+            width: 100%; 
+            max-width: 582px;
             }
+            
             .collabs-title{
                 font-size: clamp(15px, 2.5vw, 18px);
             }
@@ -141,9 +145,10 @@
         .info-position{ 
             display: flex;
             flex-direction: column;
+            
             .txt-logement{
                 h2{
-                    font-size: clamp(18px, 2.5vw, 36px );
+                    font-size: clamp(24px, 3vw, 36px );
                     }
             
                 .logement-location{
@@ -155,13 +160,14 @@
         .info-proprio{
             display: flex;
             flex-direction: column;
+            padding-top: 0px;
             .logement-host{
                     .name-host{
-                        font-size: clamp(15px, 2.5vw, 18px);
+                        font-size: clamp(15px, 5vw, 18px);
                     }
                     .image-host{
-                        height: clamp(48px, 2.5vw,64px);
-                        width: clamp(48px, 2.5vw,64px);
+                        height: clamp(48px, 5vw,64px);
+                        width: clamp(48px, 5vw,64px);
                     }
             }
             .logement-tag{
@@ -172,7 +178,7 @@
                     }
                 }
                 .logement-rating{
-                    font-size: clamp(27px, 2.5vw, 36px );
+                    font-size: clamp(27px, 4vw, 36px );
                 }
         }
     }
@@ -180,6 +186,7 @@
     @media (min-width : 375px ) and (max-width : 768px) {
         height: 513px;
         margin-bottom: 0;
+        padding-bottom: 200px;
 
        .collabs-logement{
         display: grid;
@@ -196,12 +203,14 @@
        }
   
        .info-position{
+        padding-top: 40px;
             .txt-logement{
                 position: relative;
                 height: 73px;
 
                 h2{
-                    font-size: clamp(10px, 2.5vw, 18px );
+                    font-size: clamp(18px, 4vw, 24px );
+                    width: 335px;
                 }
                 
                 .logement-location{
@@ -218,19 +227,20 @@
         }
 
         .info-proprio{
+            padding-top: 40px;
             .logement-host{
                     .name-host{
-                        font-size: clamp(12px, 2.5vw, 15px);
+                        font-size: clamp(12px, 5vw, 15px);
                         width: 80px;
                     }
                     .image-host{
-                        height: clamp(32px, 2.5vw,48px );
-                        width: clamp(32px, 2.5vw, 48px);
+                        height: clamp(32px, 5vw,48px );
+                        width: clamp(32px, 5vw, 48px);
                     }
             }
 
             .logement-rating{
-                font-size: clamp(18px, 2.5vw, 27px);
+                font-size: clamp(18px, 4vw, 27px);
             }
     }
  }
