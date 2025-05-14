@@ -5,16 +5,20 @@
     display: grid;
     padding-top: 80px;
 
-    @media (max-width:768px){
-        margin-bottom: -90px;
-    }
-
-    @media (max-width: 1240px) and (min-width: 375px) {
+    @media (max-width : 1240px) and (min-width: 769px){
         width: 100%;
         max-width: 1023px;
         min-width:335px ;
         min-height: 180px;
     }
+
+    @media (max-width : 768px) and (min-width: 375px){
+        margin-bottom: -90px;
+        width: 100%;
+        padding-top: clamp(40px, 10vw, 100px);
+        padding-bottom: 80px;
+    }
+
 
 }
 
