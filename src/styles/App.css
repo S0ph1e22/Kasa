@@ -22,8 +22,7 @@
   border-radius: 10px;    
   padding : 50px ;
   box-sizing: border-box;
-  margin-top: clamp(40px,5vw,80px) ;
-
+  margin-top: clamp(40px,5vw,80px);
   
   @media (max-width: 1240px) and (min-width: 769px) {
       grid-template-columns: repeat(2,1fr);
