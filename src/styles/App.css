@@ -34,7 +34,6 @@
       background-color: white;
       padding: 0;
       padding-top: 10px;
-      min-width: 335px;
-    
+      min-width: auto;    
   }
 }
