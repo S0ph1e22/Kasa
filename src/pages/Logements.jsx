@@ -1,19 +1,59 @@
 import Collabs from "../components/Collabs";
-import logementsData from '../logement.json';
 import Carousel from "../components/Carousel.jsx";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/Logements.scss";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
+
+//Requete vers logement.json, si réponse correct, renvoie la liste de logement, sinon relance l'erreur
+async function fetchLogement(){
+    try{
+        const response = await fetch ('/logement.json');
+        if (!response.ok){
+            throw new Error ('erreur lors du chargement de la page')
+        }
+        const data = await response.json();
+        return data;
+    } catch (error) {
+    console.error ('erreur dans fetchlogement :', error);
+    throw error;
+    }
+}
 
 function Logements (){
 
-    const { id } =useParams();
-    const logement = logementsData.find (item=>item.id===id);
+    const { id } =useParams(); //récup id dans l'url
+    const navigate = useNavigate(); //pour rediriger
+    const [logement, setLogement] = useState(null); //stock les données du logement
+    const [loading, setLoading] = useState(true); //gère état de charegement
+
+    useEffect(()=>{
+        async function getLogement(){
+            try {
+                const data = await fetchLogement(); //appel fonction fetchLogement qui va renvoyer un tableau
+                const found = data.find (item => item.id===id); //recherche dans le tableau l'id qui correspond à celui dans l'url
+
+                if (!found){ //si aucun logement trouvé, redirige vers la page erreur
+                    navigate("/error"); 
+                    return
+                }
+                setLogement(found); //si objet trouvé, met a jour l'état logement avec usestate 
+                setLoading(false); //signal chargement terminé, permet de rendre le composant
+            } catch (error){   //redirige si erreur
+                console.error ('erreur lors du fetch logement :', error);
+                navigate ("/error"); 
+            }
+        }
+        getLogement();
+    }, [id, navigate]); //useeffect s'execute qd id change dans l'url
+
+    if (loading) return <p> chargement...</p> //empeche l'affichage du contenu tant que les données ne sont pas encore chargée depuis logement.json
+
     const rating = parseInt(logement.rating); //recup la note dans le fichier json
     const totalStars = 5 ;  //nb d'étoile
     const stars = Array.from ({length: totalStars}, (_, index) => (  //tableau de 5 éléments avec array from
         <span key={index} className={index < rating ? "star full" : "star empty"}> ★ </span> //le tableau renvoie une etoile pour chaque elements
-    ))
+    ));
+
 
     return(
         <div className="logement-detail">
