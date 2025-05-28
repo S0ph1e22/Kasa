@@ -1,6 +1,6 @@
 //page /home, affiche les cards, banner, header et footer
 
-import '../styles/App.css'
+import '../styles/App.scss'
 import React, {useEffect, useState} from 'react'
 import Banner from "../components/Banner.jsx";
 import Card from "../components/Card.jsx";

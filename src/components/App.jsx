@@ -9,7 +9,7 @@ import Home from '../pages/Home.jsx';
 import ErrorPage from "../pages/Error.jsx";
 import APropos from "../pages/Apropos.jsx";
 import Logements from "../pages/Logements.jsx";
-import '../styles/App.css';
+import '../styles/App.scss';
 
 
 const router = createBrowserRouter([
