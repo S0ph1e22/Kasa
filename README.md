@@ -1,12 +1,30 @@
-# React + Vite
+# Kasa
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Kasa est une application front-end développée avec **React** et **React Router**, visant à reproduire une expérience utilisateur moderne et réactive à partir de maquettes fournies.  
+Le projet se concentre exclusivement sur l’interface utilisateur et utilise des données simulées depuis un fichier JSON.
 
-Currently, two official plugins are available:
+## 🎯 Objectifs du projet
+- Implémenter une interface dynamique en React
+- Gérer la navigation avec React Router
+- Manipuler et afficher des données simulées
+- Respecter les maquettes fournies (design responsive)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Technologies utilisées
+- **React** (composants, hooks)
+- **React Router** (navigation entre pages)
+- **Vite** (configuration et démarrage rapide)
+- **Node.js** (environnement d’exécution JavaScript)
+- **CSS** pour le style
 
-## Expanding the ESLint configuration
+## 📂 Fonctionnalités principales
+- Affichage des logements à partir d’un fichier JSON
+- Page d’accueil listant les logements
+- Page de détails avec informations et galerie d’images
+- Gestion des pages d’erreur (404)
+- Interface responsive adaptée aux mobiles et tablettes
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Installation et lancement
+
+1. **Cloner le projet**
+   ```bash
+   git clone https://github.com/S0ph1e22/Kasa.git
